@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "SF Pro";
+    src: url("sf-pro.woff2") format("woff2"),
+         url("sf-pro.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "SF Pro", sans-serif;
+  }
+.complete{
+    color: #fff;
+    background-color: transparent !important;
+}
+
+
+ .webBackground {
+    background: url(https://i.pinimg.com/1200x/d9/b9/c6/d9b9c6935ce4a5025e4fd5ac37b5c3bc.jpg) center center / cover no-repeat fixed;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.todo-list{
+    background-color:rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) ;
+    width: 500px;
+    border-radius: 16px;
+    margin: 100px 0 60px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.todo-list_add{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-header{
+    font-size: 20px;
+    font-weight: 600;
+}
+.add-input-task{
+    display: flex;
+    gap: 10px;
+}
+.input-task{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 16px;
+}
+.add-button{
+    width: 50px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+.todo-list_tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+}
+.task-check{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.task-content{
+    width: 100%;
+    display: flex;
+    justify-items: start;
+}
+.task-content p{
+    font-size: 16px;
+}
+  
+@media screen and (max-width: 768px) {
+    .todo-list{
+        width: 90%;
+    }
+}
